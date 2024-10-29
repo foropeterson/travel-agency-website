@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <script src="https://kit.fontawesome.com/YOUR_ACTUAL_FONT_AWESOME_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <a href="#" class="logo">Travel Explorer</a>
+    <div class="navlinks" id="navlinks">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+    <button class="signup-btn"><a href="#">Sign Up</a></button>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="home">
+    <div class="text-side">
+      <h2 class="tag-line">Adventure Awaits</h2>
+      <h1 class="heading">Explore the Beauty of the World</h1>
+      <p class="desc">Discover stunning locations, immerse yourself in vibrant cultures, and enjoy unforgettable experiences. Your journey begins here.</p>
+    </div>
+    <div class="image-side">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQngPsmx2JwuAcbFzrxNk82XEIVvSEiNplnrA&s" alt="Beautiful Landscape">
+    </div>
+    <!-- Separate Buttons Section -->
+    <div class="buttons">
+      <div class="button-container">
+        <button class="btn learn-more">Learn More</button>
+      </div>
+      <div class="button-container">
+        <a href="#" class="btn book-now">
+          <i class="fas fa-arrow-right"></i>
+          <span>Book Now</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h3 class="section-title">Our Travel Services</h3>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="assets/service1.jpg" alt="Travel Guide Service">
+          <h4>Personalized Travel Guides</h4>
+          <p>Our expert guides will take you off the beaten path to explore hidden gems.</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/service2.jpg" alt="Transportation Service">
+          <h4>Transport Services</h4>
+          <p>Convenient transportation options tailored to your itinerary and needs.</p>
+        </div>
+        <div class="service-card">
+          <img src="assets/accommodation.jpg" alt="Accommodation Service">
+          <h4>Accommodation Booking</h4>
+          <p>Find the perfect place to stay, from luxury hotels to cozy hostels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-us">
+    <div class="container">
+      <h3 class="section-title">About Us</h3>
+      <div class="about-content">
+        <div class="about-text">
+          <p>At Travel Explorer, we are dedicated to providing you with the best travel experiences. Our passionate team of travel experts ensures customer satisfaction through quality service and innovative travel solutions. Join us to explore the world like never before!</p>
+        </div>
+        <img src="assets/about.jpg" alt="Travel Team" class="about-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destinations Section -->
+  <section id="destinations" class="featured-destinations">
+    <h3>Featured Travel Destinations</h3>
+    <div class="destination-cards">
+      <div class="destination-card">
+        <img src="assets/download (1).jpeg" alt="Paris">
+        <h4>Paris</h4>
+        <p>Experience the charm of the Eiffel Tower and historic streets filled with art and culture.</p>
+      </div>
+      <div class="destination-card">
+        <img src="assets/download (3).jpeg" alt="Maldives">
+        <h4>Maldives</h4>
+        <p>Dive into crystal-clear waters and relax on beautiful white sand beaches.</p>
+      </div>
+      <div class="destination-card">
+        <img src="assets/download (2).jpeg" alt="Tokyo">
+        <h4>Tokyo</h4>
+        <p>Explore the perfect blend of tradition and modernity in the bustling city of Tokyo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonials-container" id="testimonials-container">
+      <div class="testimonial active">
+        <p>"Travel Explorer made my vacation unforgettable! The service was top-notch, and the guides were incredibly knowledgeable."</p>
+        <h4>Jane Doe</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Booking through Travel Explorer was easy and hassle-free. Highly recommend their services for your next adventure!"</p>
+        <h4>John Smith</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="newsletter" class="newsletter">
+    <h3>Stay Updated!</h3>
+    <p>Sign up for our newsletter to get the latest travel deals, tips, and news.</p>
+    <form onsubmit="subscribeNewsletter(event)">
+      <input type="email" id="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2024 Travel Explorer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#home" class="to-top" id="toTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script>
+    // Toggle navigation menu for mobile view
+    function toggleMenu() {
+      const navLinks = document.getElementById("navlinks");
+      navLinks.classList.toggle("show");
+    }
+
+    // Show scroll-to-top button when scrolling down
+    window.addEventListener("scroll", () => {
+      const toTopButton = document.getElementById("toTop");
+      toTopButton.style.opacity = window.scrollY > 200 ? "1" : "0";
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    // Carousel effect for testimonials
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    
+    function showTestimonials() {
+      testimonials.forEach((item, index) => {
+        item.style.display = index === currentTestimonial ? 'block' : 'none';
+      });
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    }
+    setInterval(showTestimonials, 5000); // Change every 5 seconds
+    showTestimonials();
+
+    // Subscribe to newsletter
+    function subscribeNewsletter(event) {
+      event.preventDefault();
+      const emailInput = document.getElementById("email");
+      const email = emailInput.value;
+      alert(`Subscribed successfully with email: ${email}`);
+      emailInput.value = ''; // Clear input field
+    }
+  </script>
+
+</body>
+</html>
